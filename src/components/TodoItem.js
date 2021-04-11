@@ -4,9 +4,12 @@
 　・チェックボックスにチェックが入っているか管理する
 　・チェックボックスにチェックが入っているかアイテムをグレーアウトする
 */
-function TodoItem(  ) {
+function TodoItem( {item} ) {
+  
   return (
     <label className="panel-block">
+      <input type="checkbox" />
+      {item.text}
     </label>
   );
 }
